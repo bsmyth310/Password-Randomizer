@@ -16,3 +16,4 @@ Click generate password button
     -and/or special characters
 -Input should be validated and at least one character type should be selected
 -All prompts answered, password generated and written on the page
+

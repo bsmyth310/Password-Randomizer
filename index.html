@@ -1,60 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-      <div class="container">
-          <header>
-            <h1>Password Generator</h1>
-          </header>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1> Password Generator </h1>
+        </header>
         <div class="card">
-          <div class="card-header">
-            <h2>Generate a Password</h2>
-          </div>
-          <div class="card-body">
-            <textarea
-              readonly
-              id="password"
-              placeholder="Your Secure Password"
-              aria-label="Generated Password"
-           ></textarea>
-          </div>
-        <div class="wrapper">
-          <div cLass="passwordRange"> 
-            <label class="title">Password Length</label>
-            <span></span>
-          
-           <input type="range" min="8" max="128" value="8" step="1"id="password-length"
-            oninput="document.getElementById('display-password-length').value=this.value">
-
-            <input type="text" value="8" maxlength="2" id="display-password-length"
-            oninput="document.getElementById('password-length').value=this.value" disabled>
-          </div>
-          
-            <input type="checkbox" id="lowercase" checked="checked">
-            <label for="lowercase">a-z</label>
-
-            <input type="checkbox" id="uppercase" checked="checked">
-            <label for="lowercase">A-Z</label>
-
-            <input type="checkbox" id="numbers" checked="checked">
-            <label for="numbers">0-9</label>
-
-            <input type="checkbox" id="symbols" checked="checked">
-            <label for="symbols">!-+</label>
-
-
-        </div>
-      </div>
-        <div class="card-footer">
-        <button id="generate" class="btn">Generate Password</button>
+            <div class="card=header">
+                <h2>Generate a Password</h2>                
+            </div>
+            <div class="card-body">
+                <textarea id="password" placeholder="Your Secure Password" aria-label="Generated Password" readonly></textarea>
+            </div>
+            <div class="card-footer">
+                <button id="generateBtn" class="btn">Generate Your Password</button>
+            </div>
         </div>
     </div>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
