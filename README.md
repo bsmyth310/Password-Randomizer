@@ -17,3 +17,4 @@ Click generate password button
 -Input should be validated and at least one character type should be selected
 -All prompts answered, password generated and written on the page
 
+<img src="Password Generator Finished.png" alt="Alt text" title="Optional title">
